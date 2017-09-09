@@ -27,7 +27,9 @@ if (isset($_POST['btn'])) {
 				}
 				else {
 					$f = $d->closest;
-					$response = $domain." => ".$f->timestamp;
+					$date = date_create($f->timestamp);
+					$time = date_format($date, "Y-m-d, H:i:s");
+					$response = $domain." => ".$time;
 				}
 				//$data['message'] = $response;
 				//array_push($data, $response);
@@ -72,9 +74,10 @@ if (isset($_POST['btn'])) {
 			
 		</div>
 		<div>
-			<textarea cols="7" rows="7" id="result" readonly="true" class="form-control" >
+			<textarea style="font-family: sans-serif; font-size: 20px; font-style: bold;" cols="7" rows="7" id="result" readonly="true" class="form-control" >
 				<?php
 				if(isset($array)) {
+					echo "\n";
 					for($j=0; $j<=count($array); $j++) {
 						echo $array[$j]."\n";
 					}
