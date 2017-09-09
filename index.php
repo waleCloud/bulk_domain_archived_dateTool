@@ -33,10 +33,12 @@ if (isset($_POST['btn'])) {
 				}
 				//$data['message'] = $response;
 				//array_push($data, $response);
+				trim($response);
 				$array[$i] = $response;
 			}
 			$i++;
 		}
+		//print_r($array);
 	}
 ?>
 
@@ -74,16 +76,19 @@ if (isset($_POST['btn'])) {
 			
 		</div>
 		<div>
+		<?php
+				if(isset($array)) { ?>
 			<textarea style="font-family: sans-serif; font-size: 20px; font-style: bold;" cols="7" rows="7" id="result" readonly="true" class="form-control" >
 				<?php
-				if(isset($array)) {
 					echo "\n";
 					for($j=0; $j<=count($array); $j++) {
 						echo $array[$j]."\n";
 					}
-				}
+					//print_r($array);
 				?>
 			</textarea>
+
+			<?php } echo count($array)." results processed."; ?>
 		</div>
 	</div>
 	<script>
