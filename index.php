@@ -78,7 +78,7 @@ if (isset($_POST['btn'])) {
 		<div>
 		<?php
 				if(isset($array)) { ?>
-			<textarea style="font-family: sans-serif; font-size: 20px; font-style: bold;" cols="7" rows="7" id="result" readonly="true" class="form-control" >
+			<textarea style="font-family: sans-serif; font-size: 12px; font-style: bold;" cols="7" rows="7" id="result" readonly="true" class="form-control" >
 				<?php
 					echo "\n";
 					for($j=0; $j<=count($array); $j++) {
