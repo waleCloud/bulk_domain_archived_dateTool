@@ -13,10 +13,10 @@
                         <label for="txtarea"></label>
                         <textarea name="txtarea" rows="10" id="txtarea" class="form-control form-control-lg" placeholder="Paste domains here"></textarea>
                     </div>
-                    <div class="form-group">
+                    <!--<div class="form-group">
                         <label for="ifile">Upload a file</label>
                         <input id="ifile" class="form-conthrol" type="file">
-                    </div>
+                    </div>-->
                     <div class="form-group">
                         <label for=""></label>
                         <button id="go" class="form-control btn btn-success" type="submit">Process</button>
