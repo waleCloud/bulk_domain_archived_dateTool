@@ -11,7 +11,7 @@
                 <div class="form">
                     <div class="form-group">
                         <label for="txtarea"></label>
-                        <textarea name="txtarea" rows="10" id="txtarea" class="form-control form-control-lg" placeholder="Paste domains here"></textarea>
+                        <textarea name="txtarea" rows="10" id="txtarea" class="form-control form-control-lg" placeholder="Paste domains here" required="true"></textarea>
                     </div>
                     <!--<div class="form-group">
                         <label for="ifile">Upload a file</label>
