@@ -1,7 +1,7 @@
 # Domain Archive Tool
 
 <p align="center">
-<a href="https://domain-archive-tool.herokuapp.com/"><img src="https://cdn.worldvectorlogo.com/logos/heroku-1.svg" alt="Visit Link"></a>
+See here: [Dat online](https://domain-archive-tool.herokuapp.com/)
 </p>
 
 ## About DAT
